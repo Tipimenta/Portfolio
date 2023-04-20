@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.bg-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(180deg, #030917 0%, rgba(3, 9, 23, 0) 100%), linear-gradient(180deg, #053829 0%, rgba(3, 23, 16, 0) 100%), linear-gradient(180deg, #007D58 0%, rgba(3, 9, 23, 0) 100%);
+    /* opacity: 100; */
+}
+
+
+.nav-menu {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    width: 70px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+.nav-list li a {
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+    margin: 15px;
+}
+
+
+.nav-list li a:after{
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #97AA22;
+  transition: width 0.7s ease 0s, left 0.7s ease 0s;
+  width: 0;
+}
+
+.nav-list li a:hover:after{
+    width: 100%; 
+    left: 0; 
+}
+
+.bg-home {
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 100;
+    line-height: 120px;
+}
+
+h6 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #97AA22;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 80px;
+}
+
+.name-home {
+    width: 40%;
+}
+
+.about-home {
+    width: 35%;
+    ;
+}
+
+.container-social ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
